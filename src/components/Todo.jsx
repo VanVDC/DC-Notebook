@@ -28,7 +28,6 @@ class Todo extends Component {
 }
 
 const btnStyle={
-  color: '-',
   border: 'none',
   padding:'5px 8px',
   borderRadius: '50%',
