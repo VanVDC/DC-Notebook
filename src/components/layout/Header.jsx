@@ -12,12 +12,12 @@ import {Link} from 'react-router-dom';
   )
 }
 const linkStyle ={
-  color: '#fff',
-  textDecoration: 'none'
+  color: '#FE6A53',
+  textDecoration: 'none',
 }
 const headerStyle ={
-  background:'darkgray',
-  color: 'white',
+  background:'#25CED1',
+  color: '#FE6A53',
   textAlign: 'center',
   padding: '10px'
 }

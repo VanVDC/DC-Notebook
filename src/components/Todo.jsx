@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Todo extends Component {
   getStyle =()=>{
     return { 
-      background: '#f4f4f4',
+      background: '#FCEADE',
       padding: '10px',
       borderBottom: '1px #ccc dotted',
       textDecoration: this.props.todo.completed ? 'line-through' : 'none' }
@@ -28,6 +28,7 @@ class Todo extends Component {
 }
 
 const btnStyle={
+  background:'#FFFFFF',
   border: 'none',
   padding:'5px 8px',
   borderRadius: '50%',
