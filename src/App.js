@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Todos from './components/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
-import About from './components/pages/About';
+import Week from './components/pages/Week';
 import './App.css';
 import axios from 'axios';
 
@@ -56,7 +56,7 @@ class App extends Component {
                 < Todos markComplete={this.markComplete}todos={this.state.todos} delTodo={this.delTodo}/>
               </React.Fragment>
             )}/>
-            <Route path="/about" component={About}/>
+            <Route path="/week" component={Week}/>
         
 
           </div>

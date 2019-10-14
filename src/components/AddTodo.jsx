@@ -22,14 +22,14 @@ import React, { Component } from 'react'
         type="text" 
         name='title'
         style={{flex:'10', padding: '5px'}}
-        placeholder='Add Todo....'
+        placeholder='Add Task....'
         value={this.state.title}
         onChange={this.onChange}
         />
 
         <input 
         type="submit" 
-        value='submit'
+        value='Add'
         className='btn'
         style={{flex: '1'}}/>
       </form>
