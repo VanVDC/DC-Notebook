@@ -8,6 +8,8 @@ class Todo extends Component {
       borderBottom: '1px #ccc dotted',
       textDecoration: this.props.todo.completed ? 'line-through' : 'none' }
   }
+
+  
  
   render() {
     const{id, title}=this.props.todo;
@@ -16,7 +18,7 @@ class Todo extends Component {
         <p>
           <input type="checkbox" onChange={this.props.markComplete.bind(this,id)}/>{' '}
         {title}
-        <button onClick={this.props.delTodo.bind(this, id)}style={btnStyle}>x</button>
+        <button onClick={this.props.delTodo.bind(this, id)}style={btnStyle}>-</button>
 
         </p>
         
@@ -26,8 +28,7 @@ class Todo extends Component {
 }
 
 const btnStyle={
-  background: "red",
-  color: 'white',
+  color: '-',
   border: 'none',
   padding:'5px 8px',
   borderRadius: '50%',
