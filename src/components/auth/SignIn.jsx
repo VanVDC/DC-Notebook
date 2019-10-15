@@ -7,7 +7,14 @@ function SignIn() {
           <label htmlFor="">Email</label> {" "}
           <input type="text"/>{" "}
           <label htmlFor="">Password</label>{" "}
-          <input type="text"/>
+          <input type="text"/> {" "}
+
+          <input 
+            type="submit" 
+            value='Login'
+            className='btn'
+            style={{flex: '1'}}
+            />
           
       </form>
     </React.Fragment>
