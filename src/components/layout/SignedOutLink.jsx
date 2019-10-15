@@ -4,8 +4,8 @@ import {NavLink, Link} from 'react-router-dom';
 function SignedOutLink() {
   return (
     <ul className="right">
-    <Link style={linkStyle} to= "/">Sign Up</Link> | {" "}
-    <Link style={linkStyle} to= "/">Login</Link>
+    <Link style={linkStyle} to= "/signup">Sign Up</Link> | {" "}
+    <Link style={linkStyle} to= "/signin">Login</Link>
   </ul>
   )
 }

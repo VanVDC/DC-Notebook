@@ -4,8 +4,11 @@ import Todos from './components/projects/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/projects/AddTodo';
 import Week from './components/pages/Week';
+import SignUp from './components/auth/SignUp';
+import SignIn from './components/auth/SignIn';
 import './App.css';
 import axios from 'axios';
+
 
 class App extends Component {
   state={
@@ -57,6 +60,8 @@ class App extends Component {
               </React.Fragment>
             )}/>
             <Route path="/week" component={Week}/>
+            <Route path="/signup" component={SignUp}/>
+            <Route path="/signin" component={SignIn}/>
         
 
           </div>

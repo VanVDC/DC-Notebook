@@ -7,7 +7,7 @@ function SignedInLink() {
       <Link style={linkStyle} to= "/">Over-View</Link> | {" "}
       <Link style={linkStyle} to= "/week">Week</Link> | {" "}
       <Link style={linkStyle} to= "/calendar">Calendar</Link> | {" "}
-      <Link style={linkStyle} to= "/">Logout</Link> | {" "}
+      <Link style={linkStyle} to= "/logut">Logout</Link> | {" "}
       <Link style={linkStyle} to= "/">NN</Link>
     </ul>
   )
