@@ -1,16 +1,21 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 function SignedInLink() {
   return (
     <ul className="right">
-      <li><NavLink to='/'></NavLink></li>
-      <li><NavLink to='/week'>Week</NavLink></li>
-      <li><NavLink to='/calendar'>Calendar</NavLink></li>
-      <li><NavLink to='/'>Log Out</NavLink></li>
-      <li><NavLink to='/'>name</NavLink></li>
+      <Link style={linkStyle} to= "/">Over-View</Link> | {" "}
+      <Link style={linkStyle} to= "/week">Week</Link> | {" "}
+      <Link style={linkStyle} to= "/calendar">Calendar</Link> | {" "}
+      <Link style={linkStyle} to= "/">Logout</Link> | {" "}
+      <Link style={linkStyle} to= "/">NN</Link>
     </ul>
   )
+}
+
+const linkStyle ={
+  color: '#FE6A53',
+  textDecoration: 'none',
 }
 
 export default SignedInLink;

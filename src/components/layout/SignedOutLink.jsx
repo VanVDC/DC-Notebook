@@ -1,13 +1,18 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 function SignedOutLink() {
   return (
     <ul className="right">
-      <li><NavLink to='/'>Sign Up</NavLink></li>
-      <li><NavLink to='/'>Login</NavLink></li>
-    </ul>
+    <Link style={linkStyle} to= "/">Sign Up</Link> | {" "}
+    <Link style={linkStyle} to= "/">Login</Link>
+  </ul>
   )
+}
+
+const linkStyle ={
+  color: '#FE6A53',
+  textDecoration: 'none',
 }
 
 export default SignedOutLink;

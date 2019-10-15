@@ -7,18 +7,11 @@ import SignedOutLink from './SignedOutLink';
   return (
     <header style={headerStyle}>
       <h1>Scheduler</h1>
-      <Link style={linkStyle} to= "/">Over-View</Link> | {" "}
-      <Link style={linkStyle} to= "/week">Week</Link> | {" "}
-      <Link style={linkStyle} to= "/calendar">Calendar</Link>
       <SignedInLink/>
       <SignedOutLink/>
 
     </header>
   )
-}
-const linkStyle ={
-  color: '#FE6A53',
-  textDecoration: 'none',
 }
 const headerStyle ={
   background:'#25CED1',
