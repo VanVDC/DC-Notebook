@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import SignedInLink from './SignedInLink';
+import SignedOutLink from './SignedOutLink';
 
  function Header() {
   return (
@@ -8,6 +10,9 @@ import {Link} from 'react-router-dom';
       <Link style={linkStyle} to= "/">Over-View</Link> | {" "}
       <Link style={linkStyle} to= "/week">Week</Link> | {" "}
       <Link style={linkStyle} to= "/calendar">Calendar</Link>
+      <SignedInLink/>
+      <SignedOutLink/>
+
     </header>
   )
 }
