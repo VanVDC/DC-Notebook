@@ -6,13 +6,13 @@ class Todo extends Component {
       background: '#FCEADE',
       padding: '10px',
       borderBottom: '1px #ccc dotted',
-      textDecoration: this.props.todo.completed ? 'line-through' : 'none' }
+      textDecoration: this.props.project.completed ? 'line-through' : 'none' }
   }
 
   
  
   render() {
-    const{id, title}=this.props.todo;
+    const{id, title, content}=this.props.project;
     return (
       <div style={this.getStyle()}>
         <p>
@@ -20,6 +20,9 @@ class Todo extends Component {
         {title}
         <button onClick={this.props.delTodo.bind(this, id)}style={btnStyle}>-</button>
 
+        </p>
+        <p>
+          {content}
         </p>
         
       </div>

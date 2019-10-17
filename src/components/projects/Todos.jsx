@@ -4,8 +4,8 @@ import Todo from './Todo';
 class Todos extends Component{
   render(){
     return(
-      this.props.todos.map((todo)=>(
-        <Todo key={todo.id} todo={todo} markComplete={this.props.markComplete} delTodo={this.props.delTodo}/>
+      this.props.projects.map((project)=>(
+        <Todo key={project.id} project={project} markComplete={this.props.markComplete} delTodo={this.props.delTodo}/>
       ))
     )
   }

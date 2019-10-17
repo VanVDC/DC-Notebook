@@ -6,6 +6,8 @@ import AddTodo from './components/projects/AddTodo';
 import Week from './components/pages/Week';
 import SignUp from './components/auth/SignUp';
 import SignIn from './components/auth/SignIn';
+import {connect} from 'react-redux'
+
 import './App.css';
 import axios from 'axios';
 
@@ -47,7 +49,11 @@ class App extends Component {
     }
     this.setState({todos: [...this.state.todos, newTodo]})
   }
+
   render(){
+    // console.log(this.props);
+    const {projects} =this.props;
+
     return (
       <Router>
         <div className="App">
@@ -56,7 +62,7 @@ class App extends Component {
             <Route exact path='/' render={props =>(
               <React.Fragment>
                 <AddTodo addTodo={this.addTodo}/>
-                < Todos markComplete={this.markComplete}todos={this.state.todos} delTodo={this.delTodo}/>
+                < Todos markComplete={this.markComplete}todos={this.state.todos} delTodo={this.delTodo} projects={projects}/>
               </React.Fragment>
             )}/>
             <Route path="/week" component={Week}/>
@@ -75,4 +81,10 @@ class App extends Component {
  
 }
 
-export default App;
+const mapStateToProps =(state)=>{
+  return{
+    projects: state.project.projects
+  }
+}
+
+export default connect(mapStateToProps)(App);
