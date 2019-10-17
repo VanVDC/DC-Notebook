@@ -5,7 +5,8 @@ import {createProject} from '../../store/actions/projectAction'
  class AddTodo extends Component {
    state={
      title: '',
-     content:''
+     content:'',
+     content2:'',
    }
 
    onChange=(e)=>this.setState(
@@ -23,6 +24,7 @@ import {createProject} from '../../store/actions/projectAction'
 
   render() {
     return (
+      <div style={{fontFamily:'arial'}}>
       <form onSubmit={this.onSubmit}style={{display: 'flex'}}>
         <input 
         type="text" 
@@ -40,13 +42,21 @@ import {createProject} from '../../store/actions/projectAction'
         onChange={this.onChange}
         />
 
+        <textarea 
+        name='content2'
+        style={{flex:'10', padding: '5px'}}
+        placeholder='Add Content....'
+        value={this.state.content2}
+        onChange={this.onChange}
+        />    
+
         <input 
         type="submit" 
-        value='Create'
+        value='+'
         className='btn'
         style={{flex: '1'}}/>
       </form>
-    )
+      </div>)
   }
 }
 

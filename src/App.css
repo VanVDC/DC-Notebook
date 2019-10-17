@@ -25,12 +25,14 @@ a {
 }
 
 .btn{
-  display: inline-block;
-  border: none;
+  
+  
+  border-radius: 45px;
   background: #1A8352;
   color: #fff;
   padding: 7px 20px;
   cursor: pointer;
+  font-size: 40px;
 }
 
 .btn:hover{
@@ -40,4 +42,7 @@ a {
 
 h1{
   color: white;
+}
+form-container{
+  
 }
